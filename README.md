@@ -1,4 +1,4 @@
-#Get test data
+# Get test data
 To download the data please run `get-data.sh`
 
 Usage:
@@ -8,7 +8,7 @@ Usage:
  
  `./get-data.sh 2018 01`
  
- #Run spark job
+ # Run spark job
  
  To run this job you have to provide input params:
  
@@ -24,10 +24,10 @@ For proper working you have to adjust `--driver-memory` value. For tests I was u
 
 You also have to have proper spark configuration (env vals: SPARK_HOME, HADOOP_HOME)
 
-#Test
+# Test
 
 To test just run `sbt test`. Env vals SPARK_HOME and HADOOP_HOME have to be properly set. If running on Windows `winutils.exe` must be accesible in cmd from every directory (place it on PATH env val).
 
-#Others
+# Others
 
 I wasn't able to determine event for `starring` the repo... was looking over in official docs [https://developer.github.com/v3/activity/events/] and just couldn't find any info how to infer this. Current dev therefore don't spot this and FollowEvent is counted in place of it.  
